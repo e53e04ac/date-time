@@ -8,7 +8,7 @@ import { Base } from 'base';
 import { hold } from 'hold';
 import { unwrap } from 'hold';
 
-/** @type {import('./index').DateTime.Constructor} */
+/** @type {import('.').DateTime.Constructor} */
 const constructor = ((options) => {
 
     const _options = ({
@@ -21,7 +21,7 @@ const constructor = ((options) => {
         }),
     });
 
-    /** @type {import('./index').DateTime._Self} */
+    /** @type {import('.').DateTime._Self} */
     const _self = ({
         options: (() => {
             return options;
@@ -31,7 +31,7 @@ const constructor = ((options) => {
         }),
     });
 
-    /** @type {import('./index').DateTime.Self} */
+    /** @type {import('.').DateTime.Self} */
     const self = ({
         ...Base({}),
         _DateTime: (() => {
@@ -252,7 +252,7 @@ const constructor = ((options) => {
 
 });
 
-/** @type {import('./index').DateTime.Companion} */
+/** @type {import('.').DateTime.Companion} */
 const companion = ({
     now: (() => {
         return constructor(Date.now());
@@ -290,7 +290,7 @@ const companion = ({
     }),
 });
 
-/** @type {import('./index').DateTime.ConstructorWithCompanion} */
+/** @type {import('.').DateTime.ConstructorWithCompanion} */
 const constructorWithCompanion = Object.assign(constructor, companion);
 
 export { constructorWithCompanion as DateTime };
