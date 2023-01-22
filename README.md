@@ -1,7 +1,7 @@
 # date-time
 
 ~~~~~ sh
-npm i github:e53e04ac/date-time
+npm install e53e04ac/date-time
 ~~~~~
 
 ~~~~~ mjs
